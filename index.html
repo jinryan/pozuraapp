@@ -3,7 +3,6 @@
     <head>
         <title>Pozura Website Demo</title>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="stylesheet.css">
         
     </head>
@@ -65,10 +64,6 @@
 
                 async function init() {
                     console.log("Initializing");
-                    
-                    $.getJSON("model.json", function(json) {
-                        console.log(json); // this will show the info it in firebug console
-                    });
                     
                     const modelURL = URL + 'model.json';
                     const metadataURL = URL + 'metadata.json';

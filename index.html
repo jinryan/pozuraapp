@@ -117,7 +117,7 @@
                     }
                     
                     
-                    poseData.push(prediction[0].probability > 0.6);
+                    poseData.push(prediction[1].probability > 0.6);
                     
                     if (poseData.length == 10) {
                         if (poseData.filter(Boolean).length >= 6) {
